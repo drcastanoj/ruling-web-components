@@ -1,0 +1,54 @@
+{
+  "trials": [
+    {
+      "id": "0",
+      "name": "Kanye West",
+      "date": "06/01/2019",
+      "category": "Entertainment",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem vel volutpat ultricies.",
+      "likes": 14,
+      "dislikes": 12,
+      "image": "03.jpg"
+    },
+    {
+      "id": "1",
+      "name": "Marck Zuckerberg",
+      "date": "03/01/2019",
+      "category": "Business",
+      "description": "Cras sed molestie sem, sed condimentum mi. Nulla facilisi.",
+      "likes": 13,
+      "dislikes": 12,
+      "image": "01.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Cristina Fernandez de Kirchner",
+      "date": "01/01/2018",
+      "category": "Politics",
+      "description": "Aenean venenatis nisl et maximus suscipit. Sed in hendrerit dolor, at efficitur sapien.",
+      "likes": 104,
+      "dislikes": "200",
+      "image": "02.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Malala Yousafzai",
+      "date": "07/01/2019",
+      "category": "Entertainment",
+      "description": "Fusce bibendum lobortis justo lobortis elementum.",
+      "likes": 105,
+      "dislikes": 201,
+      "image": "04.jpg"
+    }
+  ],
+  "main-trial": {
+    "id": "main-0",
+    "name": "Kanye West",
+    "date": "10/09/2019",
+    "category": "Entertainment",
+    "description": "Lorem ipsum",
+    "likes": "100",
+    "dislikes": "200",
+    "image": "main-01.jpg"
+  }
+}

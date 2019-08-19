@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/fonts/fonts.scss";
+
+.recommendation{
+  @include display-space-between;
+  background: $gray-dark;
+  padding: 30px;
+  margin: 25px 0;
+  div{
+    @include display-vertical-center;
+    font-size: 30px;
+    font-weight: 200;
+    @include font-lato-light;
+  }
+  button{
+    @include button-transparent;
+    padding: 20px 25px;
+  }
+}

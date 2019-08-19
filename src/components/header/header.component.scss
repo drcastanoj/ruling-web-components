@@ -1,0 +1,161 @@
+@import "../../styles/fonts/fonts.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+
+.main-header {
+  background-image: url("src/styles/images/Main-01.jpg");
+  height: 100vh; /* =h */
+  background-size: cover;
+
+  header {
+    @include linear-gradient(180deg);
+    padding: 40px;
+    nav {
+      @include display-space-between;
+      .title-nav {
+        @include font-lato-bold;
+        font-size: 30px;
+        color: $white;
+        text-decoration: none;
+      }
+      .main-nav {
+        @include display-space-around;
+        a {
+          margin: 10px;
+          @include font-lato-regular;
+          font-size: 20px;
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .content {
+    background: inherit;
+    width: 35%;
+    height: 46%;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    transform: translate(-58%, -92%);
+    overflow: hidden;
+
+    .text {
+      padding: 25px;
+      background: $black-opacity;
+      height: 100%;
+      box-sizing: border-box; /* so that padding is included in height */
+      @include display-column;
+      color: $white;
+      :first-child {
+        @include font-lato-light;
+        :first-child {
+          font-size: 50px;
+        }
+      }
+      .description {
+        font-size: 20px;
+        @include font-lato-light;
+      }
+
+      .info {
+        a {
+          color: $white;
+        }
+      }
+
+      :last-child {
+        @include font-lato-bold;
+        font-size: 18px;
+      }
+    }
+
+    .blur {
+      background: inherit;
+      height: 104vh;
+      width: 299.667%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(-10%, -24%);
+      filter: blur(20px);
+      z-index: -1;
+    }
+  }
+
+  .voting {
+    width: 35%;
+    height: 10%;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    transform: translate(-58%, 36%);
+    overflow: hidden;
+    display: flex;
+    div {
+      width: 50%;
+      @include display-center;
+      i {
+        color: $white;
+        font-size: 50px;
+      }
+    }
+    > :first-child {
+      background: $like-opacity;
+    }
+    > :last-child {
+      background: $dislike-opacity;
+    }
+  }
+
+  .closing {
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 0%;
+    @include display-vertical-center;
+    > :first-child {
+      color: $white;
+      width: 30%;
+      height: 100%;
+      @include display-left;
+      background-color: $black-opacity;
+      span{
+        padding-right: 20px;
+        font-size: 28px;
+      }
+      :after {
+        content: "";
+        float: left;
+        position: absolute;
+        top: 37%;
+        width: 0;
+        height: 0;
+        left: 30%;
+        border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0)
+          rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.8);
+        border-style: solid;
+        border-width: 15px 14px 15px 19px;
+        border-radius: 0;
+        opacity: 0.4;
+      }
+    }
+    > :last-child {
+      width: 70%;
+      @include display-right;
+      background-color: $white-opacity;
+      height: 100%;
+      font-size: 28px;
+      >:first-child{
+        font-weight: bold;
+        padding-left: 30px;
+      }
+      >:last-child{
+        padding-left: 10px;
+      }
+     
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.message {
+  background: $gray-light;
+  padding : 25px;
+  margin: 20px 0;
+  display: flex;
+  color: $gray-dark;
+
+  >:first-child{
+    @include display-column;
+    width: 20%;
+    :first-child{
+      font-size: 23px;
+    }
+    h2{
+      margin: 2px;
+      font-size: 39px;
+      color: $black;
+    }
+  }
+  .description{
+    width: 75%;
+    @include display-center;
+    font-size: 20px;
+  }
+
+  i {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 32px;
+    margin-top: 18px;
+  }
+
+}

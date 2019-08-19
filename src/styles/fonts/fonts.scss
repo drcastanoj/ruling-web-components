@@ -1,0 +1,14 @@
+
+@mixin font-lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+@mixin font-lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+}
+
+@mixin font-lato-regular {
+  font-family: "Lato", sans-serif;
+}

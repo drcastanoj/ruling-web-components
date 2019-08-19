@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.footer {
+  @include display-space-between;
+  color: $gray-dark;
+  border-top: 1px dashed $gray-footer;
+  padding: 40px 0;
+  :first-child{
+    display: flex;
+    justify-content: flex-start;
+    a {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+
+  > :last-child {
+    @include display-center;
+    i {
+      font-size: 25px;
+      margin-left: 20px;
+    }
+  }
+}

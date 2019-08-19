@@ -1,0 +1,66 @@
+@import "./variables.scss";
+
+@mixin thumbs-up {
+  background: $like;
+  padding: 5px;
+  font-size: 25px;
+}
+
+@mixin thumbs-down {
+  background: $dislike;
+  padding: 5px;
+  font-size: 25px;
+}
+
+@mixin linear-gradient($grades) {
+  background: linear-gradient($grades, black, transparent);
+}
+
+@mixin display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin display-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin display-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin display-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin display-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin display-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin display-column {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+@mixin button-transparent {
+  background: none;
+  border: 1px solid $white;
+  padding: 10px 25px;
+  color: $white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
