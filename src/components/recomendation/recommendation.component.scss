@@ -8,10 +8,8 @@
   linear-gradient(
     rgba(255, 255, 255, 0.75), 
     rgba(255, 255, 255, 0.75)
-  ),
-  /* bottom, image */
-  url("src/styles/images/bg-01.jpg");
-  // background: url("src/styles/images/bg-01.jpg"), rgba(255, 255, 255, 0.575);
+  ),  url("src/styles/images/bg-01.jpg");
+  
   padding: 30px 15px;
   margin: 25px 0;
   div {
