@@ -14,7 +14,6 @@ export class Home extends HTMLElement {
         ${html}
     `;
 
-    console.log(this.trials);
     this.trials = await getTrials();
     
     this.trials.forEach(trial => {

@@ -2,7 +2,6 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
-
 .main-header {
   background-image: url("src/styles/images/Main-01.jpg");
   height: 100vh; /* =h */
@@ -10,12 +9,12 @@
 
   header {
     @include linear-gradient(180deg);
-    padding: 40px;
+    padding: 30px;
     nav {
       @include display-space-between;
       .title-nav {
         @include font-lato-bold;
-        font-size: 30px;
+        font-size: 32pt;
         color: $white;
         text-decoration: none;
       }
@@ -24,9 +23,14 @@
         a {
           margin: 10px;
           @include font-lato-regular;
-          font-size: 20px;
+          font-size: 16pt;
           text-decoration: none;
           color: $white;
+
+          &.icon-search {
+            font-size: 27pt;
+            margin-left: 20pt;
+          }
         }
       }
     }
@@ -34,13 +38,23 @@
 
   .content {
     background: inherit;
-    width: 35%;
+    width: 85%;
     height: 46%;
     position: absolute;
     top: 65%;
     left: 30%;
-    transform: translate(-58%, -92%);
+    transform: translate(-24%, -92%);
     overflow: hidden;
+
+    @media (min-width: $break-point-md) {
+      width: 60%;
+      transform: translate(-34%, -92%);
+    }
+
+    @media (min-width: $break-point-lg) {
+      width: 40%;
+      transform: translate(-51%, -92%);
+    }
 
     .text {
       padding: 25px;
@@ -51,16 +65,18 @@
       color: $white;
       :first-child {
         @include font-lato-light;
+        font-size: 16pt;
         :first-child {
-          font-size: 50px;
+          font-size: 50pt;
         }
       }
       .description {
-        font-size: 20px;
+        font-size: 19pt;
         @include font-lato-light;
       }
 
       .info {
+        font-size: 14pt;
         a {
           color: $white;
         }
@@ -68,7 +84,7 @@
 
       :last-child {
         @include font-lato-bold;
-        font-size: 18px;
+        font-size: 16pt;
       }
     }
 
@@ -86,14 +102,22 @@
   }
 
   .voting {
-    width: 35%;
+    width: 85%;
     height: 10%;
     position: absolute;
     top: 65%;
     left: 30%;
-    transform: translate(-58%, 36%);
+    transform: translate(-24%, 36%);
     overflow: hidden;
     display: flex;
+    @media (min-width: $break-point-md) {
+      width: 60%;
+      transform: translate(-34%, 36%);
+    }
+    @media (min-width: $break-point-lg) {
+      width: 40%;
+      transform: translate(-51%, 37%);
+    }
     div {
       width: 50%;
       @include display-center;
@@ -122,7 +146,7 @@
       height: 100%;
       @include display-left;
       background-color: $black-opacity;
-      span{
+      span {
         padding-right: 20px;
         font-size: 28px;
       }
@@ -148,14 +172,13 @@
       background-color: $white-opacity;
       height: 100%;
       font-size: 28px;
-      >:first-child{
+      > :first-child {
         font-weight: bold;
         padding-left: 30px;
       }
-      >:last-child{
+      > :last-child {
         padding-left: 10px;
       }
-     
     }
   }
 }

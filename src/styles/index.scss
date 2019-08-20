@@ -1,5 +1,6 @@
 @import "./fonts/fonts.scss";
 @import "./icons/icons.css";
+@import "./variables.scss";
 
 body{
   margin: 0;
@@ -11,19 +12,19 @@ body{
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: $break-point-sm) {
   .container {
-    width: 750px;
+    width: 850px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: $break-point-md) {
   .container {
-    width: 970px;
+    width: 1070px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: $break-point-lg) {
   .container {
-    width: 1170px;
+    width: 1270px;
   }
 }
 

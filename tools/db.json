@@ -6,8 +6,8 @@
       "date": "06/01/2019",
       "category": "Entertainment",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo lorem vel volutpat ultricies.",
-      "likes": 14,
-      "dislikes": 12,
+      "likes": 5,
+      "dislikes": 13,
       "image": "03.jpg"
     },
     {
@@ -27,7 +27,7 @@
       "category": "Politics",
       "description": "Aenean venenatis nisl et maximus suscipit. Sed in hendrerit dolor, at efficitur sapien.",
       "likes": 104,
-      "dislikes": "200",
+      "dislikes": 30,
       "image": "02.jpg"
     },
     {
@@ -36,8 +36,8 @@
       "date": "07/01/2019",
       "category": "Entertainment",
       "description": "Fusce bibendum lobortis justo lobortis elementum.",
-      "likes": 105,
-      "dislikes": 201,
+      "likes": 20,
+      "dislikes": 70,
       "image": "04.jpg"
     }
   ],

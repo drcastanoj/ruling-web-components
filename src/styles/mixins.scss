@@ -10,10 +10,11 @@
   background: $dislike;
   padding: 5px;
   font-size: 25px;
+  padding-top: 8px;
 }
 
 @mixin linear-gradient($grades) {
-  background: linear-gradient($grades, black, transparent);
+  background: linear-gradient($grades, #333333, transparent);
 }
 
 @mixin display-center {

@@ -3,7 +3,7 @@
 
 .card {
   width: 100%;
-  height: 550px;
+  height: 680px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 20px 0;
@@ -23,19 +23,21 @@
   }
   .content {
     position: absolute;
-    padding: 20px 50px;
+    padding: 4% 10%;
     bottom: 10%;
-    width: 82%;
+    width: 80%;
+    overflow: hidden;
     @include linear-gradient(0);
     > :first-child {
-      font-size: 40px;
+      font-size: 45pt;
     }
     .description {
-      font-size: 18px;
+      font-size: 16pt;
       margin: 10px 0;
       height: 62px;
     }
     .time {
+      font-size: 12pt;
       margin-bottom: 10px;
       span {
         font-weight: bold;
@@ -44,8 +46,8 @@
 
     .voting {
       display: flex;
-      padding: 20px 0;
-
+      padding: 15px 0;
+      
       .icon,
       > button {
         margin-right: 15px;
@@ -81,7 +83,7 @@
     width: 100%;
     bottom: 0;
     height: 10%;
-    font-size: 25px;
+    font-size: 20pt;
 
     .likes {
       background: $like-opacity;
@@ -99,6 +101,7 @@
       @include display-left;
       padding-right: 20px;
       i {
+        padding-top: 9px;
         margin-left: 10px;
       }
     }

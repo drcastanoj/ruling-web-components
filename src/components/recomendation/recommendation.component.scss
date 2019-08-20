@@ -2,19 +2,28 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/fonts/fonts.scss";
 
-.recommendation{
+.recommendation {
   @include display-space-between;
-  background: $gray-dark;
-  padding: 30px;
+  background: 
+  linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(255, 255, 255, 0.75)
+  ),
+  /* bottom, image */
+  url("src/styles/images/bg-01.jpg");
+  // background: url("src/styles/images/bg-01.jpg"), rgba(255, 255, 255, 0.575);
+  padding: 30px 15px;
   margin: 25px 0;
-  div{
+  div {
     @include display-vertical-center;
-    font-size: 30px;
+    font-size: 25pt;
     font-weight: 200;
     @include font-lato-light;
   }
-  button{
+  button {
     @include button-transparent;
     padding: 20px 25px;
+    border: 3px solid $black;
+    color: $black;
   }
 }
