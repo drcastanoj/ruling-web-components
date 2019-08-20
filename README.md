@@ -33,8 +33,6 @@ npm run build
 npm test
 ```
 
-### Features:
+### View live demo:
 
-* ES6 Support via [babel](https://babeljs.io/) (v7)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
+[Click here](https://rule-of-thumb-test.herokuapp.com/) 
