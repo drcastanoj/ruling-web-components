@@ -85,10 +85,11 @@ describe("Card Component", () => {
       testInstance.trial = { ...trialMock };
       document.body.appendChild(testInstance);
       testInstance.valueSelected = ValueSelectedEnum.DISLIKE;
+      testInstance.isVoted = false;
       testInstance.manageVoting();
       setTimeout(() => {
         expect(testInstance._$button.innerHTML).toEqual('Vote again');
-      });
+      }, 100);
 
     });
 

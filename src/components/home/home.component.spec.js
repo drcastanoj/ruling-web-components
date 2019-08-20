@@ -26,8 +26,8 @@ describe("Home Component", () => {
       document.body.appendChild(testInstance);
       /// waitn for response 
       setTimeout(()=>{
-        expect(testInstance.querySelectorAll('ze-card').length).toEqual(4);
-      });
+        expect(testInstance.getElementsByTagName('ze-card').length).toEqual(4);
+      }, 100);
     });
 
   });
